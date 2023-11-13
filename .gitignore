@@ -1,0 +1,12 @@
+/sudo
+/pyinfra-debug.log
+/tmp/
+/.venv/
+.idea
+dist
+build/lib/infratasks
+*/**/__pycache__
+src/infratasks.egg-info
+/pyinfra-tasks/
+/pyinfra-tasks/pyinfra-debug.log
+dotfiles

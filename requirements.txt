@@ -1,0 +1,4 @@
+python-dotenv~=1.0.0
+privy~=6.0.0
+pyinfra~=2.7
+setuptools~=68.2.2

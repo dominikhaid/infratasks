@@ -1,0 +1,6 @@
+[submodule "dotfiles"]
+	path = dotfiles
+	url = https://github.com/dominikhaid/dotfiles.git
+[submodule "src/infratasks/ops/docker-compose"]
+	path = src/infratasks/ops/docker-compose
+	url = https://github.com/dominikhaid/docker-compose-collection
