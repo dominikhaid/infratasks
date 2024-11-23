@@ -33,6 +33,7 @@ class Operation(AbstractParseElement):
         if new_candidate and isinstance(new_candidate, dict):
             self.execute_candidate(new_candidate, configure)
         else:
+            logger.info(f"No install candiate for {self.name} {self.host_data.get('os_version')}".upper())
             pass
 
     def execute_candidate(self, new_candidate: dict[str, str], configure: bool = True):
