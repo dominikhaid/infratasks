@@ -53,8 +53,9 @@ class Operation(AbstractParseElement):
     def get_candidate(candidates: list[dict[str, str]], host_data: dict[str, str]) -> dict[str, str] | None:
         for candidate in candidates:
             if (candidate.get("os") == host_data.get("os") and candidate.get("linux_name") == host_data.get(
-                    "linux_name") and host_data.get("os_version").__contains__(candidate.get("os_version"))):
-                return candidate
+                "linux_name")):
+                if host_data.get("os_version").__contains__(candidate.get("os_version")) or host_data.get("os_override").__contains__(candidate.get("os_version")):
+                    return candidate
             elif (not candidate.__contains__("linux_name") and candidate.get("os") == host_data.get("os")
                   and host_data.get("os_version").__contains__(candidate.get("os_version"))):
                 return candidate

@@ -7,8 +7,8 @@ class OsUtil:
         # self.linux_distribution = host.get_fact(LinuxDistribution)
         self.linux_name = host.get_fact(LinuxName)
         self.os = host.get_fact(Os)
-        override: dict[str, str] = host.data.get("os_override")
-        self.os_version = host.get_fact(OsVersion) if override is None else override
+        self.os_override: dict[str, str] = host.data.get("os_override")
+        self.os_version = host.get_fact(OsVersion)
 
         self.user = host.get_fact(User)
         self.hostname = host.get_fact(Hostname)
@@ -37,6 +37,7 @@ class OsUtil:
             "user": self.user,
             "os": self.os,
             "os_version": self.os_version,
+            "os_override": self.os_override,
             "linux_name": self.linux_name,
             "hostname": self.hostname,
             "home": self.home,

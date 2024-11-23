@@ -76,5 +76,5 @@ class OpsUtil:
             command=command,
         )
         if not status or name == "cargo" and not stdout[0].__contains__(name):
-            raise Exception(f"please make sure cargo is installed, {name, command}")
+            raise Exception(f"please make sure {name} is installed, {name, command}")
         return stdout
