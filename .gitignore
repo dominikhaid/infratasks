@@ -10,3 +10,5 @@ src/infratasks.egg-info
 /pyinfra-tasks/
 /pyinfra-tasks/pyinfra-debug.log
 dotfiles
+.venv~
+tasks
