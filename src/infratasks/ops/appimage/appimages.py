@@ -3,7 +3,7 @@ from pyinfra.operations import files, apt
 from infratasks.utils.operations import Operation
 
 
-class AppsOperation(Operation):
+class AppimagesOperation(Operation):
     name = "apps"
     configure = True
     delete = False

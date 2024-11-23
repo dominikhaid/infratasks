@@ -7,16 +7,11 @@ use_sudo_password = False
 
 sys_use_sudo = True
 sys_sudo_user = infra_user_name
-sys_use_sudo_password = "example"
+sys_use_sudo_password = "dom53361."
 # sys_use_sudo_password = infra_user_pw
 
 apt_use_sudo=True
-apt_use_sudo_password = "example"
-# apt_sudo_user = infra_user_name
-# apt_use_sudo_password = infra_user_pw
-# apt_use_sudo_password = True
-# apt_update = ["fzf"]
-
+apt_use_sudo_password = "dom53361."
 git_opts = {
     "user.name": "username",
     "user.email": "example@user.com",
@@ -30,3 +25,11 @@ git_opts = {
     "pull.rebase": "true",
     "fetch.prune": "true",
 }
+
+
+#dpl = {"system": True}
+#dpl = {"system":True,"docker": True, "languages":True, "desktop":True}
+#dpl = {"desktop":True}
+#dpl = {"languages":True, "desktop":True}
+ops = {"appimage.appimages": True}
+#exclude = ["apache2", "nginx"]
